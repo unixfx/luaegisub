@@ -36,7 +36,7 @@ function alpha(subs, sel)
 		text=text:gsub("{\\alpha&HFF&}{(\\[^}]-)}","{%1\\alpha&HFF&}")
 	    end
 
-	text=text:gsub("^({\\[^}]-)}","%1"..tf.."}")
+	text=text:gsub("^({\\[^}]-)}","%1"..tf.."}") 
 	line.text=text
 	subs[i]=line
     end
